@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom, #11366c, #11366c);
+}
+
+button {
+    border: none;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.has-background h1,
+.has-background p {
+    color: #fff !important
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+    padding: 30px;
+    height: 100vh;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-content {
+    max-width: 600px;
+    background: #fff;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 9;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#btn {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:769px) {
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+    .modal-content {
+        margin: 30px auto;
+    }
+}
